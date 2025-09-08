@@ -16,6 +16,13 @@ This version allows multiple calculations without restarting and includes error 
 4. Follow the prompts to enter numbers and select an operation.
 
 ## Example
+Welcome to Patience's Calculator!
+Enter the first number: 10
+Enter the second number: 3
+Choose operation (+, -, *, /, %): %
+Result: 1
+Do you want to calculate again? (yes/no): no
+Thank you for using Patience's Calculator! Goodbye!
 
 ## Tech Stack
 - Python 3
