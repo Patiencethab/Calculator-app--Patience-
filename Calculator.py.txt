@@ -1,0 +1,36 @@
+# Simple Calculator by Patience
+
+print("Welcome to Patience's Calculator!")
+print("You can perform addition (+), subtraction (-), multiplication (*), division (/), and modulus (%)")
+
+while True:
+    try:
+        first_number = float(input("Enter the first number: "))
+        second_number = float(input("Enter the second number: "))
+        operation = input("Choose operation (+, -, *, /, %): ")
+
+        if operation == '+':
+            result = first_number + second_number
+        elif operation == '-':
+            result = first_number - second_number
+        elif operation == '*':
+            result = first_number * second_number
+        elif operation == '/':
+            if second_number != 0:
+                result = first_number / second_number
+            else:
+                result = "Error: Cannot divide by zero"
+        elif operation == '%':
+            result = first_number % second_number
+        else:
+            result = "Invalid operation"
+
+        print("Result:", result)
+
+    except ValueError:
+        print("Please enter valid numbers.")
+
+    again = input("Do you want to calculate again? (yes/no): ").lower()
+    if again != 'yes':
+        print("Thank you for using Patience's Calculator! Goodbye!")
+        break
